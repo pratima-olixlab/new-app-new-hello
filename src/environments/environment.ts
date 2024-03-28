@@ -1,5 +1,5 @@
 export const environment = {
-    production: true,
+    production: false,
     NG_APP_ID: process.env['NG_APP_ID'],
     NG_APP_KEY : process.env['NG_APP_KEY'],
     NG_APP_AUTH_DOMAIN : process.env['NG_APP_AUTH_DOMAIN'],

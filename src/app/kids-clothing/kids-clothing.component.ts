@@ -25,7 +25,6 @@ export class KidsClothingComponent implements OnInit {
         ref.where('category', '==', 'Kids Clothing')
       )
       .valueChanges();
-    console.log('this.products', this.product$);
   }
 
   addToCart(product: Product) {

@@ -70,7 +70,6 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.isAuthenticated = this.authService.isSignedIn;
-    console.log('this.isAuthenticated', this.isAuthenticated);
     this.afAuth.authState.subscribe((user) => {
       if (user) {
         this.firebaseService.getUserById(user.uid).subscribe((userData) => {
